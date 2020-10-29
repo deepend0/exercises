@@ -1,0 +1,50 @@
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://localhost:8010/eureka/
+---
+spring:
+  profiles: subject
+  application:
+    name: lab-4-subject
+words: I,You,He,She,It
+server:
+    port: 8011
+---
+spring:
+  profiles: verb
+  application:
+    name: lab-4-verb
+words: ran,knew,had,saw,bought
+server:
+    port: 8012
+---
+spring:
+  profiles: article
+  application:
+    name: lab-4-article
+words: a,the
+server:
+    port: 8013
+---
+spring:
+  profiles: adjective
+  application:
+    name: lab-4-adjective
+server:
+    port: 8014
+words: reasonable,leaky,suspicious,ordinary,unlikely
+---
+spring:
+  profiles: noun
+  application:
+    name: lab-4-noun 
+words: boat,book,vote,seat,backpack,partition,groundhog
+server:
+    port: 8015
+---
+spring:
+  profiles: sentence
+server:
+    port: 8020
+
